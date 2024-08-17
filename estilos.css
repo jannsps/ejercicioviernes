@@ -1,0 +1,103 @@
+.container{
+    display: flex;
+    flex-direction: row;/*define el tipo de ordenamiento fila o columna */
+    justify-content: space-around;/*distribuye hor o vert de acuerdo a flex direction*/
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 300px;
+    border: 2px solid black ;
+}
+.container-card{
+    width: 300px;
+}
+.card{
+    width: auto;
+    border: 2px solid darkblue ;
+    margin: 10px;
+    padding: 5px;
+    -webkit-box-shadow: 19px 14px 25px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 19px 14px 25px 3px rgba(0,0,0,0.75);
+    box-shadow: 19px 14px 25px 3px rgba(0,0,0,0.75);
+}
+img{
+    width: 100%;
+}
+.titulo,.subtitulo{
+    text-align: center;
+    
+}
+.card-body{
+    text-align: justify ;
+    display: flex;
+    flex-direction: column;
+}
+.container div{
+    min-width: 80px;
+}
+.elemento1{
+    background-color: blue;
+}
+.elemento2{
+    background-color: brown;
+}
+.elemento3{
+    background-color: blueviolet;
+}
+.elemento4{
+    background-color: yellow;
+}
+.elemento5{
+    background-color: red;
+}
+.elemento6{
+    background-color: green;
+}
+.elemento7{
+    background-color: chocolate;
+}
+.elemento8{
+    background-color: crimson;
+}
+.elemento9{
+    background-color: darkolivegreen;
+}
+@media screen and (max-width: 480px){
+    .container{
+        display: flex;
+        flex-direction: column;/*define el tipo de ordenamiento fila o columna */
+        justify-content:    space-around;/*distribuye hor o vert de acuerdo a flex direction*/
+        align-items: center;
+        flex-wrap: wrap;
+        height: 300px;
+        border: 2px solid black ;
+    }
+    .container div{
+        min-width: 150px;
+        text-align: center;
+    }
+    .elemento1{
+        background-color: blue;
+        display: none;
+    }
+    .elemento9{
+        background-color: blue;
+        display: none;
+    }
+    .elemento2{
+        background-color: blue;
+    }
+    
+}
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .container{
+        display: flex;
+        flex-direction: column;/*define el tipo de ordenamiento fila o columna */
+        justify-content:    center;/*distribuye hor o vert de acuerdo a flex direction*/
+        align-items: flex-start;
+        flex-wrap: wrap;
+        height: 300px;
+        border: 2px solid black ;
+    }
+
+    
+}
